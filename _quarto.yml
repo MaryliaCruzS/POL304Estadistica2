@@ -4,7 +4,7 @@ project:
     - "*.Rmd"
     - "*.rmd"
     - "*.qmd"
-    - "!semana*/"
+    - "!sesion*/"
 
 website:
   title: "POL304 - Estadística para el Análisis Político 2"
@@ -15,23 +15,23 @@ website:
 
       - text: Unidad_1
         menu: 
-          - href: gml.qmd
+          - href: sesion1.qmd
             text: Modelo lineal
 
       - text: Unidad_2
         menu: 
-          - href: rp.qmd
+          - href: sesion2.qmd
             text: De Poisson
 
-          - href: lb.qmd
+          - href: sesion3.qmd
             text: Logística Binaria
 
       - text: Unidad_3
         menu: 
-          - href: clusters.qmd
+          - href: sesion4.qmd
             text: Clusters
 
-          - href: afactorial.qmd
+          - href: sesion5.qmd
             text: Análisis Factorial
 
 format:

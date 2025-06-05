@@ -1,0 +1,48 @@
+project:
+  type: website
+  render: 
+    - "*.Rmd"
+    - "*.rmd"
+    - "*.qmd"
+    - "!semana*/"
+
+website:
+  title: "POL304 - Estadística para el Análisis Político 2"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Acerca de
+
+      - text: Unidad_1
+        menu: 
+          - href: gml.qmd
+            text: Modelo lineal
+
+      - text: Unidad_2
+        menu: 
+          - href: rp.qmd
+            text: De Poisson
+
+          - href: lb.qmd
+            text: Logística Binaria
+
+      - text: Unidad_3
+        menu: 
+          - href: clusters.qmd
+            text: Clusters
+
+          - href: afactorial.qmd
+            text: Análisis Factorial
+
+format:
+  html:
+    lang: es
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+execute: 
+  freeze: auto # re-render only when source changes
+
